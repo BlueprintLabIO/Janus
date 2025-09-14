@@ -18,9 +18,14 @@ traceable auditable
 
 dual permission system
 
+uv
+
+ruff
+
+fastapi
+
+pydantic
 
 
-
-Individual module for customising model interaction style based on user's identity???
 
 
