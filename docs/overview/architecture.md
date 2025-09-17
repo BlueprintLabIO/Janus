@@ -13,35 +13,6 @@ Janus is a self-hostable, extensible AI teammate framework designed to provide h
 - **Extensible**: Plugin system for inputs, outputs, tools, and LLM providers
 - **Self-Hostable**: Complete control over data and deployment
 
-## System Architecture Overview
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    JANUS AI TEAMMATE                        │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│  ┌─────────────┐    ┌─────────────┐    ┌─────────────┐     │
-│  │   INPUT     │    │ ORCHESTRATOR│    │   OUTPUT    │     │
-│  │ PROCESSING  │───▶│ (CONDUCTOR) │───▶│ PROCESSING  │     │
-│  │             │    │             │    │             │     │
-│  └─────────────┘    └──────┬──────┘    └─────────────┘     │
-│                             │                               │
-│  ┌─────────────┐    ┌───────▼──────┐    ┌─────────────┐     │
-│  │   MEMORY    │◄──▶│   TOOLS &    │    │  PROACTIVE  │     │
-│  │ + LEARNING  │    │     MCP      │    │INTELLIGENCE │     │
-│  │             │    │              │    │             │     │
-│  └─────────────┘    └──────────────┘    └─────────────┘     │
-│                                                             │
-│  ┌─────────────────────────────────────────────────────────┐ │
-│  │              SUPPORTING SERVICES                        │ │
-│  │  ┌──────────┐ ┌──────────┐ ┌──────────┐ ┌──────────┐   │ │
-│  │  │Observ-   │ │Monitor & │ │AI Adapter│ │Identity  │   │ │
-│  │  │ability   │ │Alerting  │ │Layer     │ │System    │   │ │
-│  │  └──────────┘ └──────────┘ └──────────┘ └──────────┘   │ │
-│  └─────────────────────────────────────────────────────────┘ │
-└─────────────────────────────────────────────────────────────┘
-```
-
 ## Core Modules
 
 ### 1. Input Processing Module
